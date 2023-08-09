@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root {
+    --clr-main:#191919;
+    --clr-main-light: #7f7f7f;
+    --clr-sec: #f49c41;
+    --clr-border: #f0f2f7;
+}
+
+body {
+    font-family: Overpass;
+    line-height: 23px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--clr-main);
+    padding-top: 100px; 
+
+}
+
+a {
+    color: var(--clr-sec);
+    text-decoration: none;
+}
+
+.linea { 
+    border-bottom: 1px solid var(--clr-border);
+}
+
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid var(--clr-border);
+}
+
+.logo {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;
+    color: var(--clr-main);
+    text-decoration: none;
+}
+
+.Option { 
+    color:white;
+    background-color: #222;
+    padding:5px;
+    border-radius: .5rem;
+}
+
+.Option button {
+    border: 0;
+    width: 2rem;
+    height: 2rem;
+    line-height: 1;
+    border: 2px solid var(--clr-main);
+    background-color:red;
+}
+
+.CartImg {
+    width:30px;
+}
+
+.CardItem {
+    text-align: left;
+    line-height: normal;
+}
+
+.ItemHeader {
+    color: var(--clr-sec);
+}
+
+.ItemHeader2 {
+    font-weight: bold ;
+    text-align: left;
+}
+.ItemImage {
+    border:1px solid var(--clr-border);
+    margin-bottom:20px;
+}
+
+.ItemImg {
+    width: 300px;
+    height:300px;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+}
+
+.nav-link {
+    font-size: 16px;
+}
+
+.Info {
+    text-align: left;
+}
+
+.Contador {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.Contador button, .agregar-al-carrito, .enviar {
+    background-color: var(--clr-main);
+    border: 0;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    border: 2px solid var(--clr-main);
+    transition: .2s;
+}
+
+.agregar-al-carrito, .enviar {
+    width: auto;
+    height: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+}

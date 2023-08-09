@@ -20,15 +20,19 @@ export const ItemDetail = ({ id, titulo, imagen, categoria, stock, precio, descr
     }
 
     return (
-        <article className="CardItem">
-            <header className="Header">
-                <h2 className="ItemHeader">
+        <div className="container text-center">
+              <div class="row">
+    <div class="col">
+    <picture>
+                <img src={imagen} alt={titulo} className="ItemImg2"/>
+            </picture>
+    </div>
+    <div class="col">
+    <header className="Header">
+                <h2 className="ItemHeader2">
                     {titulo}
                 </h2>
             </header>
-            <picture>
-                <img src={imagen} alt={titulo} className="ItemImg"/>
-            </picture>
             <section>
             <p className="Info">
                     Categoria: {categoria}
@@ -46,12 +50,15 @@ export const ItemDetail = ({ id, titulo, imagen, categoria, stock, precio, descr
             <footer>
                 { 
                     quantityAdded > 0 ? (
-                        <Link to='/cart' className="Option">Terminar compra</Link>
+                        <Link to='/cart' className="enviar">Terminar compra</Link>
                     ) : (
                         <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
                     )
                 }
             </footer>
-        </article>
+    </div>
+  </div>
+            
+        </div>
     )
 }

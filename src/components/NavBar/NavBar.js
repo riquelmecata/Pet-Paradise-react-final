@@ -2,14 +2,18 @@ import { CartWidget } from "../CartWidget/CartWidget";
 import { NavLink, Link } from "react-router-dom";
 export const NavBar = () => {
     return (
-        <nav>
-           <Link to='/'><h1>Pet paradise</h1></Link> 
-            <div>
-                <NavLink to={`/productos/perros`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Perros</NavLink>
-                <NavLink to={`/productos/gatos`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Gatos</NavLink>
-                <NavLink to={`/productos/exoticos`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Exoticos</NavLink>
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <Link to='/'><h1 class="logo">Pet paradise</h1></Link> 
+                <ul class="navbar-nav">
+                    <li class="nav-item"><NavLink to={`/productos/perros`} className="nav-link">Perros</NavLink></li>
+                    <li class="nav-item"><NavLink to={`/productos/gatos`} className="nav-link">Gatos</NavLink></li>
+                    <li class="nav-item"><NavLink to={`/productos/exoticos`} className="nav-link">Exoticos</NavLink></li>
+                    <li class="nav-item"><CartWidget /></li>
+                </ul>
             </div>
-            <CartWidget />
         </nav>
+
     );
 }
