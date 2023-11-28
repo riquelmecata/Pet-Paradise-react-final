@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Pet-Paradise-react-final/static/css/main.dffb6d9e.css",
-    "main.js": "/Pet-Paradise-react-final/static/js/main.03585643.js",
+    "main.js": "/Pet-Paradise-react-final/static/js/main.eaaf6ea3.js",
     "index.html": "/Pet-Paradise-react-final/index.html",
     "static/media/cart.svg": "/Pet-Paradise-react-final/static/media/cart.7598b49227501fa5510b35721183373b.svg",
     "main.dffb6d9e.css.map": "/Pet-Paradise-react-final/static/css/main.dffb6d9e.css.map",
-    "main.03585643.js.map": "/Pet-Paradise-react-final/static/js/main.03585643.js.map"
+    "main.eaaf6ea3.js.map": "/Pet-Paradise-react-final/static/js/main.eaaf6ea3.js.map"
   },
   "entrypoints": [
     "static/css/main.dffb6d9e.css",
-    "static/js/main.03585643.js"
+    "static/js/main.eaaf6ea3.js"
   ]
 }
